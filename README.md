@@ -2,8 +2,8 @@
 my start kit
 
 ```shell
-$ git clone -o my-starter-kit -b master --single-branch \
-https://github.com/jeongsd/my-starter-kit.git MyApp
+$ git clone -o my-start-kit -b master --single-branch \
+https://github.com/jeongsd/my-start-kit.git MyApp
 $ cd MyApp
 ```
 
