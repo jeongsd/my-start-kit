@@ -9,4 +9,5 @@ $ cd MyApp
 
 ## todo
 - [x] test
+- [x] react-router
 - [x] react hot replacement

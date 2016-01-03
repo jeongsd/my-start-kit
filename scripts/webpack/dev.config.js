@@ -1,13 +1,9 @@
 import webpack from 'webpack';
 import path from 'path';
+import precss from 'precss';
+import autoprefixer from 'autoprefixer';
 
 const rootPath = path.join(__dirname, '../../');
-const AUTOPREFIXER_BROWSERS = JSON.stringify({
-  browsers: [
-    'last 2 version',
-    'ie >= 9',
-  ],
-});
 
 export default {
   entry: [
@@ -33,9 +29,12 @@ export default {
   },
   postcss: () => {
     return [
-      require('precss')(),
-      require('autoprefixer')({
-        browsers: AUTOPREFIXER_BROWSERS,
+      precss(),
+      autoprefixer({
+        browsers: [
+          'last 2 version',
+          'ie >= 10',
+        ],
       }),
     ];
   },
