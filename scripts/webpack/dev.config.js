@@ -7,19 +7,12 @@ const rootPath = path.join(__dirname, '../../');
 
 export default {
   entry: [
-    path.join(rootPath, 'examples/app.js'),
-    'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/dev-server',
+    path.join(rootPath, 'src/MyApp.js'),
   ],
   output: {
     path: path.join(__dirname),
     filename: 'bundle.js',
     publicPath: '/assets/',
-  },
-  resolve: {
-    alias: {
-      myApp: path.join(rootPath, 'src/myApp.js'),
-    },
   },
   module: {
     loaders: [
