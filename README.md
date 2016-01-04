@@ -6,7 +6,7 @@ $ git clone -o my-start-kit -b master --single-branch \
 https://github.com/jeongsd/my-start-kit.git MyApp
 $ cd MyApp
 ```
-test
+
 
 ## todo
 - [x] test
